@@ -3,7 +3,6 @@ package com.goonandroid.appselect
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.goonandroid.appselect.databinding.MovieItemBinding
@@ -33,5 +32,6 @@ class MovieAdapter(private val movies : List<Movie>) : RecyclerView.Adapter<Movi
     }
 
     override fun getItemCount(): Int = movies.size
+
 
 }

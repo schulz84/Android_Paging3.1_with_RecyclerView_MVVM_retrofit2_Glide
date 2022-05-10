@@ -6,9 +6,13 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class MovieResponse(
+
     @SerializedName("results")
-    val movies: List<Movie>
+    val movies: List<Movie>,
+
+    @SerializedName("has_more")
+    val has_more: Boolean
 )
 : Parcelable {
-    constructor() : this(mutableListOf())
+    constructor() : this(mutableListOf(),true)
 }
