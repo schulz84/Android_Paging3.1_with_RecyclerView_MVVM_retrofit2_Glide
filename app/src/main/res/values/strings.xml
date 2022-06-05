@@ -2,5 +2,5 @@
     <string name="app_name">AppSelect</string>
     <string name="movie_list">Movie list</string>
     <string name="movie_title">Movie title</string>
-    <string name="list_of_movies">The best films of all time</string>
+    <string name="list_of_movies">The best films of recent times</string>
 </resources>

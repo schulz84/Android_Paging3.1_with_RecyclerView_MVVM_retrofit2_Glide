@@ -1,12 +1,11 @@
 package com.goonandroid.appselect.servicesapi
 
-import com.goonandroid.appselect.MovieResponse
-import retrofit2.Call
+import com.goonandroid.appselect.model.MovieResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface MovieApiInterface {
-    @GET("reviews/all.json?api-key=BQ6rTcziiGJE7GHuqNS0O6JQmArUIept")
+    @GET("reviews/all.json?api-key=xxx")
 
-    fun getMovieList(@Query("offset") offset : Int) : Call<MovieResponse>
+    suspend fun getMovieList(@Query("offset") offset : Int) : MovieResponse
 }
